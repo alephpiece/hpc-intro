@@ -224,7 +224,7 @@ for (int i = 0; i < N; i++)
 
 实际上，经过向量化之后（vectorized），有可能只需要$`N/4`$次运算或者更少，每次运算都是把多个数字当成一个很短的向量一起算。
 
-![vectorization](fig/vector_add.jpg)
+![vectorization](fig/vector_add.png)
 
 仍然用前面的矩阵乘法代码`mm.cxx`，不过在编译时我们启用向量化功能。执行代码，可以看到执行时间变短。
 
