@@ -345,6 +345,8 @@ for (int jj = 0; jj < N; jj += nblock_y)
 - 每个 block 有多少个 threads？
 - 每个 thread 做什么？
 
+![grid](fig/simt_grid.jpg)
+
 在这里，我们不研究具体的细节，只做演示。首先，tiling 代码中的最内层循环是一个 thread 要做的事情，我们把它提出来，按照 HIP/CUDA 的语法写成所谓的 kernel。
 
 原代码：
