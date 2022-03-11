@@ -18,7 +18,7 @@ for t in np.arange(0, T, dt):
     print(f"t = {t:.3}, u = {u:.5f}")
     u = u - dt*A*u
 
-print();
+print()
 
 dt = 0.6
 u = b
